@@ -5,6 +5,5 @@ loop:
         add rcx, 1
         cmp BYTE[rdi + rcx], 0
         jne loop
-return:
         mov rax, rcx
         ret

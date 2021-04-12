@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "*.s": "c",
-        "string.h": "c"
+        "string.h": "c",
+        "errno.h": "c"
     }
 }

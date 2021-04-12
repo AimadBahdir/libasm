@@ -9,7 +9,6 @@ loop:
         inc rsi
         cmp al, 0
         jne loop
-return:
         mov BYTE[rdi], 0
         mov rax, rcx
         ret

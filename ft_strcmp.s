@@ -5,17 +5,17 @@ loop:
         mov al, BYTE[rdi]
         mov cl, BYTE[rsi]
         cmp al, 0
-        je return
+        je _return
         cmp cl, 0
-        je return
+        je _return
         cmp al, cl
         je incr
-        jmp return
+        jmp _return
 incr:
         add rdi, 1
         add rsi, 1
         jmp loop
-return:
+_return:
         movzx rdx, al
         movzx rcx, cl
         sub rdx, rcx
